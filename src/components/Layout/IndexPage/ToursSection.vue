@@ -36,7 +36,7 @@
             FRONT
           </div>
           <div class="card__side card__side--back card__side--back--3">
-            BACK
+            Backend
           </div>
         </div>
       </div>
