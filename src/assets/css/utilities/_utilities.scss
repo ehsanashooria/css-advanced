@@ -1,0 +1,21 @@
+//Mixins
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//Classes
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-6 {
+  margin-bottom: 6rem;
+}
+
+.u-margin-bottom-1 {
+  margin-bottom: 1rem;
+}
