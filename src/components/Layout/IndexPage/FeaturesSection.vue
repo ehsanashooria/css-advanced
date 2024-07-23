@@ -1,5 +1,5 @@
 <script setup>
-import "bootstrap-icons/font/bootstrap-icons.min.css"
+
 </script>
 <template>
   <section class="section-features">

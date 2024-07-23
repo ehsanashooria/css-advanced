@@ -21,7 +21,7 @@
           Live adventurous like you never have before, embracing new challenges, exploring unknown places, and pushing
           your limits. Experience the thrill of discovery and the joy of living life to its fullest.
         </p>
-        <base-button mode="green">Let's See! -></base-button>
+        <base-button mode="green">Let's See! <i class="bi bi-arrow-right"></i></base-button>
       </div>
       <div class="col-1-of-2">
         <div class="composition">

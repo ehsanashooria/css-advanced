@@ -58,7 +58,6 @@ const buttonClass = computed(() => `button--${props.mode}`)
   &--green {
     color: var(--color-primary-dark);
     background: none;
-    text-decoration: underline !important;
     border-radius: 0.3rem !important;
     border: 2px solid var(--color-primary-dark);
 
