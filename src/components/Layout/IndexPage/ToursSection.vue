@@ -120,7 +120,7 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 <style scoped lang="scss">
 .section-tours {
   background-color: var(--color-gray-light-1);
-  padding: 20rem 0 20rem 0;
+  padding: 20rem 0 10rem 0;
   margin-top: -7rem;
 }
 
