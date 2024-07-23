@@ -40,5 +40,13 @@ c
 0src/components/Layout/IndexPage/ToursSection.vue,0\9\091140c3d3bb6c65eca526fa317f1541f73d7df4
 N
 src/components/UI/BaseCard.vue,9\1\9135eab578f83b4eb4daa316a9f11b6727d6bc34
-J
-src/assets/css/_components,3\d\3d02697de86a0cb6d7278492ac5fbe9620705d9a
+O
+src/assets/css/_components.scss,a\4\a4caab81e09320ae7d6becdfc41cf985a5ad1ea5
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+Å
+Q.idea/sonarlint/securityhotspotstore/a/4/a4caab81e09320ae7d6becdfc41cf985a5ad1ea5,3\c\3cc9d703830c2d727d000150a16c74abac03df6b
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+w
+G.idea/sonarlint/issuestore/a/4/a4caab81e09320ae7d6becdfc41cf985a5ad1ea5,c\9\c95f4c9f29f2241de5c232a3e05c75c6cc6cb8cd
