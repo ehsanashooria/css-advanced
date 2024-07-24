@@ -1,5 +1,6 @@
 <script setup>
 
+import BaseButton from "@/components/UI/BaseButton.vue";
 </script>
 
 <template>
@@ -18,6 +19,25 @@
             <div class="form__group">
               <input class="form__input" required id="email" type="email" placeholder="Email Address">
               <label for="email" class="form__label">Email address</label>
+            </div>
+            <div class="form__group">
+              <div class="form__radio-group">
+                <input name="tour" class="form__radio" type="radio" id="small">
+                <label for="small" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Small tour group
+                </label>
+              </div>
+              <div class="form__radio-group">
+                <input name="tour" class="form__radio" type="radio" id="large">
+                <label for="large" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Large tour group
+                </label>
+              </div>
+            </div>
+            <div class="form__group">
+              <base-button class="u-margin-top-2" mode="green">Go ahead and book!</base-button>
             </div>
           </form>
         </div>
@@ -42,56 +62,5 @@
     padding: 4.5rem;
   }
 }
-
-.form {
-  &__group {
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &__input {
-    padding: 1rem 1.5rem;
-    border-radius: 0.3rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-family: inherit;
-    transition: all 0.3s ease;
-    border-bottom: 4px solid transparent;
-    color: inherit;
-    width: 70%;
-    display: block;
-
-    &:focus {
-      outline: none;
-      border-bottom: 4px solid var(--color-primary);
-      box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.10);
-
-      &:invalid {
-        border-bottom: 4px solid var(--color-secondary-dark);
-      }
-    }
-
-
-    &::placeholder {
-      color: var(--color-gray-dark-2);
-    }
-  }
-
-  &__label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-left: 1.5rem;
-    margin-top: 0.7rem;
-    display: block;
-
-    transition: all 0.3s ease;
-  }
-
-  &__input:placeholder-shown + .form__label {
-    transform: translateY(-2rem);
-    opacity: 0;
-  }
-}
-
 
 </style>
