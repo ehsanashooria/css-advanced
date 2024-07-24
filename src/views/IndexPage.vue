@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/Layout/IndexPage/FeaturesSection.vue"
 import ToursSection from "@/components/Layout/IndexPage/ToursSection.vue"
 import StoriesSection from "@/components/Layout/IndexPage/StoriesSection.vue"
 import BookingSection from "@/components/Layout/IndexPage/BookingSection.vue"
+import TheFooter from "@/components/Layout/IndexPage/FooterSection.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import BookingSection from "@/components/Layout/IndexPage/BookingSection.vue"
     <stories-section></stories-section>
     <booking-section></booking-section>
   </main>
+  <the-footer></the-footer>
 </template>
 
 <style scoped lang="scss">
