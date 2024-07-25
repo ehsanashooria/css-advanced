@@ -140,7 +140,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(80);
+    transform: scale(100);
   }
 
   &__checkbox:checked ~ &__nav {
