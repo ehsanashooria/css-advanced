@@ -1142,3 +1142,8 @@ Q.idea/sonarlint/securityhotspotstore/e/6/e65e54b3cd0aaffe02ccab8c405cb48bbf716a
 Q.idea/sonarlint/securityhotspotstore/b/2/b247bb256396b6032fda95fd6e502383e24fda4e,2\3\230e9c3b882314fec7c0317e5806a098505b8478
 Å
 Q.idea/sonarlint/securityhotspotstore/b/2/b2a922fd884bab602166b3d2578bf7ebc3b47c5a,1\3\136afd21489950baa89f5b03aa08a91aaa414049
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+e
+5src/components/Layout/IndexPage/NavigationSection.vue,0\a\0a0535a63a8b9cf9e0e385f369ded334375d3ab2

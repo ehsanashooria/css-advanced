@@ -6,9 +6,11 @@ import ToursSection from "@/components/Layout/IndexPage/ToursSection.vue"
 import StoriesSection from "@/components/Layout/IndexPage/StoriesSection.vue"
 import BookingSection from "@/components/Layout/IndexPage/BookingSection.vue"
 import TheFooter from "@/components/Layout/IndexPage/FooterSection.vue";
+import NavigationSection from "@/components/Layout/IndexPage/NavigationSection.vue"
 </script>
 
 <template>
+  <navigation-section></navigation-section>
   <the-header></the-header>
   <main>
     <about-section></about-section>
