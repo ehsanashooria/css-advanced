@@ -124,7 +124,4 @@ import BaseButton from "@/components/UI/BaseButton.vue";
   margin-top: -7rem;
 }
 
-
-
-
 </style>

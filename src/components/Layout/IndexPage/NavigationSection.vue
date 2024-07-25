@@ -120,8 +120,9 @@
       display: inline-block;
       width: 1.5rem;
       height: .3rem;
-      background-color: var(--color-gray-dark-2);
+      background-color: gray;
       transition: all 0.3s ease;
+      border-radius: 3px;
     }
 
     &::before, &::after {

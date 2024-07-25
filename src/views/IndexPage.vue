@@ -24,9 +24,3 @@ import PopupSection from "@/components/Layout/IndexPage/PopupSection.vue";
   <the-footer></the-footer>
   <popup-section></popup-section>
 </template>
-
-<style scoped lang="scss">
-@import "@/assets/css/utilities/utilities";
-
-
-</style>
