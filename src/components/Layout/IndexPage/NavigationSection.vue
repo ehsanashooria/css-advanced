@@ -119,8 +119,8 @@
     &, &::before, &::after {
       display: inline-block;
       width: 1.5rem;
-      height: 3px;
-      background-color: var(--color-gray-dark-3);
+      height: .3rem;
+      background-color: var(--color-gray-dark-2);
       transition: all 0.3s ease;
     }
 
@@ -155,11 +155,13 @@
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
     transform: rotate(135deg);
+    background-color: var(--color-gray-dark-3);
   }
 
   &__checkbox:checked + &__button &__icon::after {
     transform: rotate(-135deg);
     top: 0;
+    background-color: var(--color-gray-dark-3);
   }
 }
 </style>

@@ -4,7 +4,7 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 </script>
 
 <template>
-  <section class="section-tours">
+  <section class="section-tours" id="section-tours">
     <div class="u-center-text">
       <h2 class="heading-secondary u-margin-bottom-6">
         Most popular tours
@@ -38,7 +38,7 @@ import BaseButton from "@/components/UI/BaseButton.vue";
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$297</p>
               </div>
-              <base-button mode="white">Book now !</base-button>
+              <base-button mode="white" href="#popup">Book now !</base-button>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ import BaseButton from "@/components/UI/BaseButton.vue";
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$529</p>
               </div>
-              <base-button mode="white">Book now !</base-button>
+              <base-button mode="white" href="#popup">Book now !</base-button>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ import BaseButton from "@/components/UI/BaseButton.vue";
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$897</p>
               </div>
-              <base-button mode="white">Book now !</base-button>
+              <base-button href="#popup" mode="white">Book now !</base-button>
             </div>
           </div>
         </div>

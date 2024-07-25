@@ -6,7 +6,9 @@ import ToursSection from "@/components/Layout/IndexPage/ToursSection.vue"
 import StoriesSection from "@/components/Layout/IndexPage/StoriesSection.vue"
 import BookingSection from "@/components/Layout/IndexPage/BookingSection.vue"
 import TheFooter from "@/components/Layout/IndexPage/FooterSection.vue";
-import NavigationSection from "@/components/Layout/IndexPage/NavigationSection.vue"
+import NavigationSection from "@/components/Layout/IndexPage/NavigationSection.vue";
+import PopupSection from "@/components/Layout/IndexPage/PopupSection.vue";
+
 </script>
 
 <template>
@@ -20,6 +22,7 @@ import NavigationSection from "@/components/Layout/IndexPage/NavigationSection.v
     <booking-section></booking-section>
   </main>
   <the-footer></the-footer>
+  <popup-section></popup-section>
 </template>
 
 <style scoped lang="scss">

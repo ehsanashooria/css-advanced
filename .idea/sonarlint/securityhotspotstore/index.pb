@@ -1147,3 +1147,5 @@ Q.idea/sonarlint/securityhotspotstore/b/2/b2a922fd884bab602166b3d2578bf7ebc3b47c
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 e
 5src/components/Layout/IndexPage/NavigationSection.vue,0\a\0a0535a63a8b9cf9e0e385f369ded334375d3ab2
+`
+0src/components/Layout/IndexPage/PopupSection.vue,e\d\ed6be9f8523fa4550ea115d85e82b1ed3f517eec
