@@ -118,10 +118,14 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
 .section-tours {
   background-color: var(--color-gray-light-1);
   padding: 20rem 0 10rem 0;
   margin-top: -7rem;
+  @include respond(tab-port){
+    padding: 13rem 0 4rem 0;
+  }
 }
 
 </style>

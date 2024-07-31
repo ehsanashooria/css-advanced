@@ -53,6 +53,7 @@
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(
@@ -66,6 +67,9 @@
 
   & > * {
     transform: skewY(7deg);
+  }
+  @include respond(tab-port){
+    padding: 10rem 0;
   }
 }
 

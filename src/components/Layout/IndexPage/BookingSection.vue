@@ -47,19 +47,38 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .section-booking {
   padding: 12rem 0;
   background-image: linear-gradient(to bottom right, var(--color-primary-light, var(--color-primary-dark)), var(--color-primary-dark));
 }
 
 .book {
-  height: 38rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(@/assets/image/nat-10.jpg);
   background-size: cover;
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(@/assets/image/nat-10.jpg);
+  }
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(@/assets/image/nat-10.jpg);
+  }
 
   &__form {
     width: 60%;
     padding: 4.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    @include respond(tab-land) {
+      width: 70%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 4rem;
+    }
+    @include respond(phone) {
+      padding: 3.5rem;
+    }
   }
 }
 

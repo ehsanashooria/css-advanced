@@ -61,6 +61,9 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 .section-stories {
   padding: 12rem 0;
   position: relative;
+  @include respond(tab-port){
+    padding: 5rem 0;
+  }
 }
 
 

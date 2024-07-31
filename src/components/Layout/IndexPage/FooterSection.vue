@@ -43,10 +43,15 @@
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .footer {
 
   background-color: var(--color-gray-dark-3);
   padding: 10rem 0;
+  @include respond(tab-port) {
+    padding: 6rem 0;
+  }
 
   &__logo-box {
     text-align: center;
@@ -93,7 +98,8 @@
       transform: rotate(5deg) scale(1.03);
     }
   }
-  &__copyright{
+
+  &__copyright {
     color: var(--color-gray-dark-1);
     padding-top: 1rem;
     border-top: 2px solid var(--color-gray-dark-1);

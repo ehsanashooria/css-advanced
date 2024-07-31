@@ -5,9 +5,18 @@
   margin: 0 auto;
   //Using mixin for clearfix
   @include clearfix;
+  @include respond(tab-port){
+    max-width: 40rem;
+  }
+  @include respond(phone){
+    max-width: 25rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: var(--gutter-vertical);
+    @include respond(tab-port) {
+      margin-bottom: var(--gutter-vertical-small);
+    }
   }
 
   //Note : If we have n columns, wFe will have n - 1 gutters
@@ -38,9 +47,18 @@
 
   [class^="col"] {
 
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+
     &:not(:last-child) {
       margin-right: var(--gutter-horizontal);
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: var(--gutter-vertical-small);
+      }
     }
+
     float: left;
 
   }

@@ -155,9 +155,21 @@
   @include clearfix;
   transform: skewX(-12deg);
   backface-visibility: hidden;
+  @include respond(tab-port) {
+    width: 95%;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+    padding: 3.5rem 3.5rem 3.5rem 3.5rem;
+  }
 
   & > * {
     transform: skewX(12deg);
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__shape {
@@ -168,6 +180,13 @@
     clip-path: circle();
     transform: translateX(-1.5rem) skewX(12deg);
     position: relative;
+    @include respond(phone) {
+      transform: skewX(0);
+      -webkit-shape-outside: none;
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
   }
 
   &__image {
@@ -234,6 +253,9 @@
     border-bottom: 4px solid transparent;
     width: 70%;
     display: block;
+    @include respond(tab-port){
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -270,6 +292,10 @@
   &__radio-group {
     width: 40%;
     display: inline-block;
+    @include respond(tab-port){
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-label {
@@ -305,9 +331,10 @@
     }
   }
 
-  &__radio{
+  &__radio {
     display: none;
-    &:checked + label span::after{
+
+    &:checked + label span::after {
       opacity: 1;
     }
   }

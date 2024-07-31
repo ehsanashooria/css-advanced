@@ -20,13 +20,15 @@ import BaseButton from "@/components/UI/BaseButton.vue";
           hassles. Don't miss the chance to create unforgettable memories. Act fast and make your perfect getaway a
           reality. Your ideal vacation is just a booking away!
         </p>
-        <base-button mode="green">Book now</base-button>
+        <base-button mode="green" class="popup__book">Book now</base-button>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .popup {
   position: fixed;
   top: 0;
@@ -67,12 +69,31 @@ import BaseButton from "@/components/UI/BaseButton.vue";
     display: table;
     overflow: hidden;
     transition: all .3s;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
+  }
+
+  &__book {
+    @include respond(tab-port) {
+      display: block;
+      width: 50%;
+      min-width: 13rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
   }
 
   &__left {
     width: 33.33333333%;
     display: table-cell;
     vertical-align: middle;
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -80,11 +101,17 @@ import BaseButton from "@/components/UI/BaseButton.vue";
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-port) {
+      display: block;
+      width: 100%;
+      padding: 5rem 2rem 3rem;
+    }
   }
 
   &__image {
     display: block;
     width: 100%;
+
   }
 
   &__text {
@@ -92,6 +119,10 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 
     column-count: 2;
     column-gap: 2rem;
+    @include respond(phone) {
+      column-count: 1;
+      column-gap: 0;
+    }
   }
 
   &__close:visited, &__close:link {

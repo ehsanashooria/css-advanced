@@ -35,10 +35,15 @@
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .section-about {
   background-color: var(--color-gray-light-1);
-  padding: 18rem 0;
+  padding: 22rem 0;
   margin-top: -20vh;
+  @include respond(tab-port) {
+    padding-bottom: 28rem;
+  }
 }
 
 .composition {
@@ -50,20 +55,42 @@
     position: absolute;
     transition: all 0.3s ease;
     outline-offset: 1.75rem;
+    @include respond(tab-port) {
+      width: 40%;
+    }
 
     &--p1 {
       left: 0;
       top: -1.5rem;
+      @include respond(tab-port) {
+        top: 5rem;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 2.5rem;
+      @include respond(tab-port) {
+        top: 5rem;
+        right: 2rem;
+      }
+      @include respond(phone){
+        right: 1rem;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 8rem;
+      @include respond(tab-port){
+        top: 4rem;
+        left: 28%;
+      }
+
+      @include respond(phone){
+        left: 30%;
+      }
+
     }
 
     &:hover {

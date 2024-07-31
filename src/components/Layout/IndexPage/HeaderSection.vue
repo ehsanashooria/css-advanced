@@ -18,6 +18,8 @@ import BaseButton from "@/components/UI/BaseButton.vue";
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -29,6 +31,10 @@ import BaseButton from "@/components/UI/BaseButton.vue";
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+
 
   &__logo-box {
     position: absolute;
@@ -48,7 +54,6 @@ import BaseButton from "@/components/UI/BaseButton.vue";
     text-align: center;
   }
 }
-
 
 
 </style>

@@ -32,6 +32,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/css/utilities/utilities";
+
 .navigation {
   &__checkbox {
     display: none;
@@ -49,6 +51,10 @@
     cursor: pointer;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     text-align: center;
+    @include respond(tab-port) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
 
   &__background {
@@ -59,8 +65,14 @@
     position: fixed;
     top: 4rem;
     right: 4rem;
+
     z-index: 20;
     transition: transform 0.8s ease;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
@@ -82,6 +94,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    width: 70%;
   }
 
   &__link {
@@ -98,6 +111,11 @@
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-white) 50%);
       background-size: 250%;
       border-radius: 0.3rem;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+
     }
 
     &:hover {
